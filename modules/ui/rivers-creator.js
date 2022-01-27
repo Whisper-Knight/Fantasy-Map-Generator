@@ -88,9 +88,9 @@ function createRiver() {
 
     const source = riverCells[0];
     const mouth = parent === riverId ? last(riverCells) : riverCells[riverCells.length - 2];
-    const sourceWidth = 0.05;
+    const sourceWidth = 0.15;
     const defaultWidthFactor = rn(1 / (pointsInput.dataset.cells / 10000) ** 0.25, 2);
-    const widthFactor = 1.2 * defaultWidthFactor;
+    const widthFactor = 0.25 * defaultWidthFactor;
 
     const meanderedPoints = addMeandering(riverCells);
 
