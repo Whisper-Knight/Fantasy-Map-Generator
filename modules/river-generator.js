@@ -164,7 +164,7 @@ window.Rivers = (function () {
       pack.rivers = [];
 
       const defaultWidthFactor = rn(1 / (pointsInput.dataset.cells / 10000) ** 0.25, 2);
-      const mainStemWidthFactor = defaultWidthFactor * 1.2;
+      const mainStemWidthFactor = defaultWidthFactor * 0.0;
 
       for (const key in riversData) {
         const riverCells = riversData[key];
